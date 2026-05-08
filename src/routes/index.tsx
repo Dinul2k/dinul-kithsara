@@ -110,10 +110,12 @@ function Index() {
         <h2 className="text-5xl md:text-7xl mb-16">VIDEOS</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {videos.map((v, i) => (
-            <button
+            <a
               key={i}
-              onClick={() => setActiveVideo(v.id)}
-              className="group relative aspect-video overflow-hidden bg-card text-left"
+              href={`https://www.youtube.com/watch?v=${v.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative aspect-video overflow-hidden bg-card text-left block"
             >
               <img src={v.thumb} alt={v.title} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition flex items-center justify-center">
@@ -124,7 +126,7 @@ function Index() {
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
                 <p className="text-sm tracking-wide">{v.title}</p>
               </div>
-            </button>
+            </a>
           ))}
         </div>
       </section>

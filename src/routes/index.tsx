@@ -89,7 +89,7 @@ function Index() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {releases.map((r) => (
-            <a key={r.title} href={r.link} className="group block">
+            <a key={r.title} href={r.link} target={r.link.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="group block">
               <div className="relative aspect-square overflow-hidden bg-card">
                 <img src={r.art} alt={r.title} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-50" />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">

@@ -29,15 +29,11 @@ export const Route = createFileRoute("/")({
 const releases = [
   { title: "Oya Ruwa Ma Dakala", year: "2026", art: oyaRuwa, link: "https://music.mrecentertainment.com/OyaRuwaMaDakala" },
   { title: "Priyavi", year: "2022", art: priyaviArt, link: "https://music.mrecentertainment.com/gRTK" },
-  { title: "Untitled II", year: "2023", art: portraitTeal, link: "#" },
-  { title: "Untitled III", year: "2024", art: heroGuitar, link: "#" },
-  { title: "Untitled IV", year: "2025", art: portraitRed, link: "#" },
 ];
 
 const videos = [
-  { id: "dQw4w9WgXcQ", title: "Priyavi — Official Video", thumb: portraitRed },
-  { id: "dQw4w9WgXcQ", title: "Live Session", thumb: heroGuitar },
-  { id: "dQw4w9WgXcQ", title: "Behind the Scenes", thumb: portraitTeal },
+  { id: "fb0uKT4pEL4", title: "Oya Ruwa Ma Dakala — Official Video", thumb: oyaRuwa },
+  { id: "nStedLpfkmk", title: "Priyavi — Official Video", thumb: priyaviArt },
 ];
 
 function Index() {

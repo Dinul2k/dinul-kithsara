@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Play, Instagram, Youtube, Music2, Mail, ChevronDown } from "lucide-react";
+import { Play, Instagram, Youtube, Facebook, ChevronDown } from "lucide-react";
 import heroGuitar from "@/assets/hero-guitar.jpg";
 import portraitRed from "@/assets/portrait-red.jpg";
 import portraitTeal from "@/assets/portrait-teal.jpg";
@@ -137,12 +137,11 @@ function Index() {
           <p className="text-2xl tracking-[0.3em]" style={{ fontFamily: "var(--font-display)" }}>DINUL KITHSARA</p>
           <div className="flex gap-8">
             {[
-              { Icon: Music2, href: "#", label: "Spotify" },
-              { Icon: Instagram, href: "#", label: "Instagram" },
-              { Icon: Youtube, href: "#", label: "YouTube" },
-              { Icon: Mail, href: "mailto:booking@dinulkithsara.com", label: "Booking" },
+              { Icon: Instagram, href: "https://www.instagram.com/dinul_2k/", label: "Instagram" },
+              { Icon: Youtube, href: "https://www.youtube.com/@dinulkithsara", label: "YouTube" },
+              { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=100070411661940", label: "Facebook" },
             ].map(({ Icon, href, label }) => (
-              <a key={label} href={href} aria-label={label} className="text-foreground/60 hover:text-[var(--cyan-accent)] transition-colors">
+              <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="text-foreground/60 hover:text-[var(--cyan-accent)] transition-colors">
                 <Icon size={20} />
               </a>
             ))}

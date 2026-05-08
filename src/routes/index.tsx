@@ -84,7 +84,7 @@ function Index() {
             <h2 className="text-5xl md:text-7xl">MUSIC</h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {releases.map((r) => (
             <a key={r.title} href={r.link} target={r.link.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="group block">
               <div className="relative aspect-square overflow-hidden bg-card">
@@ -108,7 +108,7 @@ function Index() {
       <section id="visuals" className="py-32 px-6 md:px-16 max-w-7xl mx-auto">
         <p className="text-xs tracking-[0.4em] text-[var(--cyan-accent)] mb-6">VISUALS</p>
         <h2 className="text-5xl md:text-7xl mb-16">VIDEOS</h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {videos.map((v, i) => (
             <button
               key={i}

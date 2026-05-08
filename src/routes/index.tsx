@@ -29,15 +29,11 @@ export const Route = createFileRoute("/")({
 const releases = [
   { title: "Oya Ruwa Ma Dakala", year: "2026", art: oyaRuwa, link: "https://music.mrecentertainment.com/OyaRuwaMaDakala" },
   { title: "Priyavi", year: "2022", art: priyaviArt, link: "https://music.mrecentertainment.com/gRTK" },
-  { title: "Untitled II", year: "2023", art: portraitTeal, link: "#" },
-  { title: "Untitled III", year: "2024", art: heroGuitar, link: "#" },
-  { title: "Untitled IV", year: "2025", art: portraitRed, link: "#" },
 ];
 
 const videos = [
-  { id: "dQw4w9WgXcQ", title: "Priyavi — Official Video", thumb: portraitRed },
-  { id: "dQw4w9WgXcQ", title: "Live Session", thumb: heroGuitar },
-  { id: "dQw4w9WgXcQ", title: "Behind the Scenes", thumb: portraitTeal },
+  { id: "fb0uKT4pEL4", title: "Oya Ruwa Ma Dakala — Official Video", thumb: oyaRuwa },
+  { id: "nStedLpfkmk", title: "Priyavi — Official Video", thumb: priyaviArt },
 ];
 
 function Index() {
@@ -88,7 +84,7 @@ function Index() {
             <h2 className="text-5xl md:text-7xl">MUSIC</h2>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {releases.map((r) => (
             <a key={r.title} href={r.link} target={r.link.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="group block">
               <div className="relative aspect-square overflow-hidden bg-card">
@@ -112,7 +108,7 @@ function Index() {
       <section id="visuals" className="py-32 px-6 md:px-16 max-w-7xl mx-auto">
         <p className="text-xs tracking-[0.4em] text-[var(--cyan-accent)] mb-6">VISUALS</p>
         <h2 className="text-5xl md:text-7xl mb-16">VIDEOS</h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {videos.map((v, i) => (
             <button
               key={i}

@@ -4,6 +4,7 @@ import { Play, Instagram, Youtube, Music2, Mail, ChevronDown } from "lucide-reac
 import heroGuitar from "@/assets/hero-guitar.jpg";
 import portraitRed from "@/assets/portrait-red.jpg";
 import portraitTeal from "@/assets/portrait-teal.jpg";
+import oyaRuwa from "@/assets/oya-ruwa-ma-dakala.jpg";
 import { VideoLightbox } from "@/components/VideoLightbox";
 
 export const Route = createFileRoute("/")({
@@ -25,6 +26,7 @@ export const Route = createFileRoute("/")({
 });
 
 const releases = [
+  { title: "Oya Ruwa Ma Dakala", year: "2026", art: oyaRuwa, link: "https://music.mrecentertainment.com/OyaRuwaMaDakala" },
   { title: "Priyavi", year: "2022", art: portraitRed, link: "#" },
   { title: "Untitled II", year: "2023", art: portraitTeal, link: "#" },
   { title: "Untitled III", year: "2024", art: heroGuitar, link: "#" },
